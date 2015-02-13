@@ -1,0 +1,538 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ke",
+				"keystate"
+			],
+			[
+				"fal",
+				"flag2"
+			],
+			[
+				"f",
+				"flag1"
+			],
+			[
+				"ptr",
+				"pptr"
+			],
+			[
+				"delete",
+				"deleteNode"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"M",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"onmo",
+				"onmouseout	Attr"
+			],
+			[
+				"onmouse",
+				"onmousedown	Attr"
+			],
+			[
+				"onmuse",
+				"onmouseout	Attr"
+			],
+			[
+				"is",
+				"isaNumber"
+			],
+			[
+				"sample",
+				"sampleValidator"
+			],
+			[
+				"p",
+				"pt1"
+			],
+			[
+				"Ap",
+				"AppWindow"
+			],
+			[
+				"C",
+				"ChildWindow"
+			],
+			[
+				"Rad",
+				"RadioGroup"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"e",
+				"exterior"
+			],
+			[
+				"pt",
+				"pt"
+			],
+			[
+				"R",
+				"RadioButtonGroup"
+			],
+			[
+				"S",
+				"STATE_ACCEPT"
+			],
+			[
+				"Dial",
+				"DialogBox"
+			],
+			[
+				"F",
+				"FOCUS_FOREGROUND"
+			],
+			[
+				"fo",
+				"focusWin"
+			],
+			[
+				"set",
+				"setFocus"
+			],
+			[
+				"Fo",
+				"focusWin"
+			],
+			[
+				"Radio",
+				"RadioButtonGroup"
+			],
+			[
+				"Radoi",
+				"RadioButton"
+			],
+			[
+				"Ra",
+				"Radiobuttons"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"chi",
+				"childWindow"
+			],
+			[
+				"ch",
+				"childWindow"
+			],
+			[
+				"RA",
+				"RADIO_INACTIVE"
+			],
+			[
+				"Radi",
+				"RadioButtonGroup"
+			],
+			[
+				"B",
+				"BadArgumentError"
+			],
+			[
+				"sta",
+				"STATUS_CANCEL"
+			],
+			[
+				"remo",
+				"removeClick"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"i",
+				"isinstance"
+			],
+			[
+				"n",
+				"None"
+			],
+			[
+				"child",
+				"childWindow"
+			],
+			[
+				"focus",
+				"focusWin"
+			],
+			[
+				"Focus",
+				"FOCUS_BACKGROUND"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"change",
+				"changeBackground"
+			],
+			[
+				"State",
+				"STATE_MAXIMIZED"
+			],
+			[
+				"s",
+				"STATE_MINIMIZED"
+			],
+			[
+				"FO",
+				"FOCUS_FOREGROUND"
+			],
+			[
+				"or",
+				"circle-orange"
+			],
+			[
+				"for",
+				"forward"
+			],
+			[
+				"tur",
+				"tur"
+			],
+			[
+				"c",
+				"char"
+			],
+			[
+				"quic",
+				"quick_sort"
+			],
+			[
+				"m",
+				"message_1"
+			],
+			[
+				"h",
+				"Harsh"
+			],
+			[
+				"me",
+				"message_1"
+			],
+			[
+				"messa",
+				"message_2"
+			],
+			[
+				"Uesr",
+				"User"
+			],
+			[
+				"_",
+				"_validate_user_"
+			],
+			[
+				"u",
+				"user_id"
+			],
+			[
+				"v",
+				"vector2"
+			],
+			[
+				"a",
+				"Acquaintances"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"norm",
+				"norm1"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"oncli",
+				"onclick	Attr"
+			],
+			[
+				"def",
+				"def	Function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 306.0,
+		"selected_items":
+		[
+			[
+				"",
+				"File: Close All"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/dhrumil/Desktop/LuvProject/main 3.html",
+		"/media/Seagate Backup Plus Drive/a33.c",
+		"/home/dhrumil/a31.c",
+		"/home/dhrumil/Downloads/TEST.ps",
+		"/var/www/processorder.php",
+		"/home/dhrumil/Desktop/Assignment-itws/dialogbox.py",
+		"/home/dhrumil/Desktop/Assignment-itws/tests.py",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/seventh(Jan-25)/animate/two/styles/style.css",
+		"/home/dhrumil/Desktop/Assignment-itws/textbox.py",
+		"/home/dhrumil/Desktop/Assignment-itws/window.py",
+		"/home/dhrumil/Desktop/Assignment-itws/checker.py",
+		"/media/DHRUMIL/assignment-3/q3/Rectangle.py",
+		"/media/DHRUMIL/sixth(Jan-22)/window.py",
+		"/media/DHRUMIL/sixth(Jan-22)/dialogbox.py",
+		"/media/DHRUMIL/sixth(Jan-22)/button.py",
+		"/home/dhrumil/hash.c",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/fourth(Jan-11)/point.py",
+		"/media/DHRUMIL/sixth(Jan-22)/tests.py",
+		"/media/DHRUMIL/assignment-3/q3/WordIterator.py",
+		"/media/DHRUMIL/assignment-3/q3/q3.py",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/sixth(Jan-22)/tests.py",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/seventh(Jan-25)/animate/two/scripts/animate.js",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/seventh(Jan-25)/animate/two/html/animate.html",
+		"/home/dhrumil/Q3.py",
+		"/home/dhrumil/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/media/USB20FD/contacts.py",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/seventh(Jan-25)/animate/two/html/untitled",
+		"/home/dhrumil/uid.py",
+		"/home/dhrumil/Desktop/merge.c",
+		"/home/dhrumil/point1.py",
+		"/home/dhrumil/Desktop/main.c",
+		"/home/dhrumil/gitrepo/itworkshop2-spring-2014/lectures/seventh(Jan-25)/animate/two/styles/untitled.py",
+		"/home/dhrumil/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/dhrumil/Q2.py",
+		"/home/dhrumil/Q51.c",
+		"/home/dhrumil/Q5.c",
+		"/home/dhrumil/Q4.c",
+		"/home/dhrumil/Q31.c",
+		"/home/dhrumil/Q3.c",
+		"/home/dhrumil/Q2.c",
+		"/home/dhrumil/tree.c",
+		"/home/dhrumil/.config/sublime-text-3/Packages/User/C++.sublime-settings",
+		"/home/dhrumil/selection.c",
+		"/home/dhrumil/quick.c",
+		"/home/dhrumil/merge.c",
+		"/home/dhrumil/insertion.c",
+		"/media/USB20FD/phonenum.py",
+		"/home/dhrumil/contacts.py",
+		"/home/dhrumil/tests.py",
+		"/home/dhrumil/phonenum.py",
+		"/home/dhrumil/testQ2.py",
+		"/home/dhrumil/testQ1.py",
+		"/home/dhrumil/Q1.py",
+		"/home/dhrumil/intopost.c",
+		"/home/dhrumil/untitled folder/home.html",
+		"/home/dhrumil/fib.py",
+		"/home/dhrumil/add.py",
+		"/home/dhrumil/bs.py",
+		"/home/dhrumil/home.html",
+		"/home/dhrumil/itws1ex2.py",
+		"/home/dhrumil/itws1ex3.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"5",
+			"()\n",
+			"++;\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "create_post.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/gitrepo/itworkshop2-spring-2014/lectures/fourth(Jan-11)/wordit.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

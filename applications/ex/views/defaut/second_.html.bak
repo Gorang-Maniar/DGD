@@ -1,0 +1,5 @@
+{{for l in lst:}}
+<div class="well">
+ {{=l}} <br>
+</div>
+{{pass}}

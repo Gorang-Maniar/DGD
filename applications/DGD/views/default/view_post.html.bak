@@ -1,0 +1,71 @@
+{{extend 'layout.html'}}
+<script>
+    function changecolor(id){
+        document.getElementById(id).style.background='#feab2f';
+    }
+    function chco(id){
+        document.getElementById(id).style.background='#06f12e';
+    }
+    function getsearch()
+    {
+         return document.getElementById("inpsec").value;
+    }
+</script>
+<div id="ask1" style="float:right;width:110px;background-color:orange;height:20px;padding:10px;color:white;positon:absolute">
+                                 Ask a Question
+</div>
+<div id="category" style="float:right;margin-top:100px;positon:absolute">
+    {{for category in category:}}
+    {{=A(category.name,_href=URL('create_post',args=category.name))}}
+    <hr>
+    {{pass}}
+</div>
+<h4 style="color:orange;margin-left:950px;margin-top:80px;positon:absolute">
+        Popular Questions Asked..
+    </h4>
+
+{{for posts in posts1:}}
+<div class="w" style="width:20%;margin-left:950px;margin-top:0px;position:absolute;float:right">
+    <table>
+        <tr>
+            <td>{{=posts.title}}</td>
+            <br>
+        </tr>
+        <tr>
+            <td style="font-size:10px;">{{=A('Answers',_href=URL('view_post',args=posts.id))}} &nbsp &nbsp Votes:  {{=posts.votes}} &nbsp &nbsp {{=A('Reply',_href=URL('view_post',args=posts.id))}}</td>
+        <br>
+        </tr>
+    </table>
+        <hr style="width:250px;background-color:black;height:3px">
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{{pass}}
+</div>
+
+
+<!--------------------------------------------------------------------------------->
+<div class="well" style="overflow:hidden;width:75%;background-color:#e2e2e2;float:left;margin-top:-1232px">
+    <h2 style="color:#3ccccc;">
+        {{=post.title}}
+    </h2>
+    {{=MARKMIN(post.body)}}
+    {{if post.file_name:}}
+    <center>
+        <img width="500px" style="height:400px;"
+    src="{{=URL(r=request,f='download',args=[post.file_name])}}"/>
+    </center>
+    {{pass}}
+    <br>
+    <br>
+    {{=post.Url}}
+{{for comme in comments:}}
+<div class="well" style="background-color:white;width:95%;overflow:hidden;">
+    {{=comme.body}}
+</div>
+{{pass}}
+{{=form}}
+</div>

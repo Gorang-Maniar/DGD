@@ -1,0 +1,7 @@
+<div style="width:100px;background-color:yellow">
+{{for l in lst:}}
+
+ {{=l}}
+    <br>
+{{pass}}
+</div>

@@ -1,0 +1,117 @@
+{{extend 'layout.html'}}
+<script>
+    function changecolor(id){
+        document.getElementById(id).style.background='#feab2f';
+    }
+    function chco(id){
+        document.getElementById(id).style.background='#06f12e';
+    }
+    function getsearch()
+    {
+         return document.getElementById("inpsec").value;
+    }
+    function chch(id)
+    {
+         document.getElementById('popup').style.opacity=1;
+       if(id=="Programming")
+            document.getElementById('popup').innerHTML="Programming dhdhdhdhdhdh lkdlskdlsddhhhhhhhhhhhhhhhhhhhhhh";
+        if(id=="Science")
+            document.getElementById('popup').innerHTML="Science";  
+     if(id=="Software")
+            document.getElementById('popup').innerHTML="Software";
+    }
+    function chch1(x)
+    {
+        document.getElementById('popup').style.opacity=0;
+    }
+</script>
+<div class="well" style="float:right;width:300px;background-color:#4C66A4;height:80px;;padding:20px;color:white;margin-top:-150px;margin-right:50px">
+    <input type="text" name="search" placeholder="Search for tags ....." id="inpsec" style="width:200px"/><div id="search" style="width:70px;height:20px;background-color:#06f12e;padding:3px;text-align:center;border: #06f12e solid 1px" onmouseover="changecolor(id)" onmouseout="chco(id)">
+    {{=A('Search',_href=URL('search_results',args='tobodone'))}}
+    </div>
+</div>
+<div id="ask1" style="float:right;width:110px;background-color:orange;height:20px;;padding:10px;color:white;">
+                                 Ask a Question
+</div>
+<div id="category" style=float:right;margin-top:100px>
+    {{for category in category:}}
+    {{=A(category.name,_href=URL('create_post',args=category.name),_id=category.name,_onmouseover="chch(id)",_onmouseout="chch1(id)")}}
+    <div id="popup" style="background-color:grey;color:white;padding:5px;width:200px;height:200px;margin-right:-190px;float:right;opacity:0;border-radius:6px;">
+    </div>
+    <hr>
+    {{pass}}
+</div>
+<div class="verticalLine" style="border-left:solid #DDDDDD;height:1890px;margin-left:140px;margin-top:95px;float:left">
+</div>
+<!------------------------------------------------------------------------------------------------->
+<h2 style="color:light black;margin-left:150px;">
+    Recent Questions Asked...
+</h2>
+<hr style="background-color:#DDDDDD;width:760px;height:3px;">
+<div id="cont" style="width:61%;background-color:white;padding:20px;margin-left:150px">
+
+{{for post in posts:}}
+    <div class="well" style="width:90%;background-color:white;border:0px;">
+    <h6 style="color:orange;">
+        {{=writer(post.created_by)}}
+    </h6>
+    <h3 style="float:right;color:orange;">
+        {{=A(post.category.name,_href=URL('list_posts_by_votes',args=post.category.name))}}
+    </h3>
+    <table>
+        <tr>
+            <td style="color:blue;">{{=post.votes}}</td>
+            <td style="font-size:16px;">{{=post.title}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="font-size:13px;color:blue">
+                {{=A('Answers',_href=URL('view_post',args=post.id))}} &nbsp &nbsp   Asked:    {{=prettydate(post.created_on)}}&nbsp &nbsptags:  {{=post.tags}} &nbsp &nbsp {{=A('Reply',_href=URL('view_post',args=post.id))}}
+                {{if post.created_by == auth.user_id:}} &nbsp &nbsp 
+                {{=A('Edit your post',_href=URL('edit_post',args=post.id))}} 
+                {{pass}}</td>
+        </tr>
+    </table>
+        <br>
+    </div>
+{{pass}}
+</div>
+
+ <!--------------------------------------------------------------------->
+    <h4 style="color:orange;margin-top:-1500px;float:right">
+        Popular Questions Asked..
+    </h4>
+
+
+{{for post2 in posts1:}}
+    <div class="w" style="width:20%;float:right;margin-top:-1510px;postion:absolute;">
+    <table>
+        <tr>
+            <td>{{=post2.title}}</td>
+            <br>
+        </tr>
+        <tr>
+            <td style="font-size:10px">{{=A('Answers',_href=URL('view_post',args=post2.id))}} &nbsp &nbsp Votes:  {{=post2.votes}} &nbsp &nbsp {{=A('Reply',_href=URL('view_post',args=post2.id))}}</td>
+        <br>
+        </tr>
+    </table>
+        <hr style="width:250px;background-color:black;height:3px">
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{{pass}}
+
+{{if page>0:}}
+<div style="background-color:#dddddd;width:5%;padding:4px;margin-top:-950px;height:20px;margin-left:150px">
+    {{=A('Previous',_href=URL(args=page-1))}}
+</div>
+{{pass}}
+
+{{if len(posts)>=10:}}
+<div style="background-color:#dddddd;width:2.5%;padding:3px;float:right;margin-right:250px;margin-top:-850px">
+    {{=A('Next',_href=URL(args=page+1))}}
+</div>{{pass}}

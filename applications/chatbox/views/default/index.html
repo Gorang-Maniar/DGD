@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+{{for u in user1:}}
+<div id="uu">
+    {{=A(u,_href=URL('view_post',args=u.id))}}
+</div>
+<br>
+{{pass}}

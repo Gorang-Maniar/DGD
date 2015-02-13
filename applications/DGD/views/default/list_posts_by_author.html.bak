@@ -1,0 +1,82 @@
+{{extend 'layout.html'}}
+<div id="ask1" style="float:right;width:110px;background-color:orange;height:20px;;padding:10px;color:white;">
+                                 Ask a Question
+</div>
+<div id="category" style=float:right;margin-top:100px>
+    {{for category in category:}}
+    {{=A(category.name,_href=URL('create_post',args=category.name))}}
+    <hr>
+    {{pass}}
+</div>
+
+<div class="well" style="background-color:white;width:75%">
+    <div style="background-color:grey;height:300px">
+        <h2 style="color:white;float:right;margin-top:200px;margin-right:350px">
+    {{=writer(user_id)}}
+</h2>
+        <div style="width:500px;heigth:500px;">
+                        <center></center>
+<center>
+    <img width="250px" style="height:200px;float:left;border: #FFFFFF solid 1px; margin-left:30px;margin-top:50px"
+    src="{{=URL(r=request,f='download',args=[profile_pic[0].profile_pic])}}"/>
+    </center>
+
+
+            </div>
+    </div>
+    <br>
+    <br>
+    <hr style="border:solid 1px">
+    <h3 style="color:#3ccccc">
+        Your recent...
+    </h3>
+{{for row in rows:}}
+    <div class="well" style="background-color:white;">
+    <h3 style="float:right;color:orange;">
+        {{=A(row.category.name,_href=URL('list_posts_by_votes',args=row.category.name))}}
+    </h3>
+    <table>
+        <tr>
+            <td style="color:blue;">{{=row.votes}}</td>
+            <td>{{=row.title}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>{{=A('Answers',_href=URL('view_post',args=row.id))}} &nbsp Asked:  {{=prettydate(row.created_on)}}</td>
+        </tr>
+    </table>
+</div>
+{{pass}}
+    <h4 style="color:orange;margin-top:-550px;float:right;margin-right:-270px">
+        Popular Questions Asked..
+    </h4>
+    {{for post in posts1:}}
+    <div class="w" style="width:30%;float:right;margin-top:-550px;postion:absolute;margin-right:-300px">
+    <table>
+        <tr>
+            <td>{{=post.title}}</td>
+            <br>
+        </tr>
+        <tr>
+            <td style="font-size:10px;">{{=A('Answers',_href=URL('view_post',args=post.id))}} &nbsp &nbsp Votes:  {{=post.votes}} &nbsp &nbsp {{=A('Reply',_href=URL('view_post',args=post.id))}}</td>
+        </tr>
+    </table>
+        <hr style="width:250px;background-color:black;height:3px;margin-top:-10px;">
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{{pass}}
+</div>
+{{if page>0:}}
+<div style="background-color:#dddddd;width:5%;padding:4px;">
+    {{=A('Previous',_href=URL(args=(user_id,page-1)))}}
+</div>{{pass}}
+{{if len(rows)>=10:}}
+<div style="background-color:#dddddd;width:2.5%;padding:3px;float:right;margin-right:250px;margin-top:-10px">
+    {{=A('Next',_href=URL(args=(user_id,page+1)))}}
+</div>
+{{pass}}
+</div>

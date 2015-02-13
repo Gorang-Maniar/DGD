@@ -1,0 +1,9 @@
+# coding: utf8
+db.define_table('users',
+                auth.signature
+                )
+db.define_table('post',
+                Field('user','reference users'),
+                Field('body','text'),
+                auth.signature
+                )

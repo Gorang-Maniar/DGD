@@ -1,0 +1,14 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+<table>
+
+{{ for line in users: }}
+<tr>
+	<td> {{ =line.id }} </td>
+	<td> {{ =line.first_name}} {{ =line.last_name }} </td>
+	<td> {{ =line.email }} </td>	
+	<td> <a href="show/{{=line.id}}"> Chat with {{ =line.first_name}} </a> </td>	
+</tr>
+{{ pass }}
+</table>

@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+
+    {{for postn in posts:}}
+        {{if postn.Email == auth.user_email:}}
+            <div class="well">
+                {{=postn.filen}}
+            </div>
+        {{pass}}
+    {{pass}}
+{{=form}}

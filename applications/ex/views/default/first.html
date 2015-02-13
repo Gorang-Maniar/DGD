@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+
+    {{for postn in posts:}}
+            <div class="well">
+                {{=postn.filen}}
+            </div>
+    {{pass}}
+{{=form}}

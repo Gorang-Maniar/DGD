@@ -1,0 +1,72 @@
+{{extend 'layout.html'}}
+<script>
+    function changecolor(id){
+        document.getElementById(id).style.background='#666666';
+    }
+    function chco(id){
+        document.getElementById(id).style.background='orange';
+    }
+</script>
+{{if request.function == 'list_posts_by_votes' or request.function == 'list_posts_by_datetime':}}
+<h2 style="color:#3ccccc;">
+    {{=category.name.title()}}
+</h2>
+{{pass}}
+<br>
+
+<div id="cdatevote" style="width:110px;background-color:orange;height:20px;;padding:10px" onmouseover="changecolor(id)" onmouseout="chco(id)">
+    {{if request.function == 'list_posts_by_votes':}}
+    {{=A('List by Datetime',_style="color:white;font-size:15px",_href=URL('list_posts_by_datetime',args=category.name))}}
+    {{elif request.function == 'list_posts_by_datetime':}}
+    {{=A('List by Votes',_style="color:white;font-size:15px",_href=URL('list_posts_by_votes',args=category.name))}}
+    {{else:}}
+    <h3 style="color:orange;">
+     {{=writer(user_id)}}
+    </h3>
+    {{pass}}
+</div>
+{{if request.function == 'list_posts_by_votes' or request.function == 'list_posts_by_datetime':}}
+
+<div id="ask" style="width:110px;background-color:orange;height:20px;;padding:10px;float:right;margin-top:-150px" onmouseover="changecolor(id)" onmouseout="chco(id)">
+    {{=A('Ask a Question',_style="color:white;font-size:16px",_href=URL('create_post',args=category.name))}}
+</div>
+{{pass}}
+<br>
+<br>
+
+{{for row in rows:}}
+<div class="well" style="width:75%;background-color:white">
+    <h5 style="color:green">
+        {{=row.created_by}}
+</h5>
+    <table>
+        <tr>
+            <td>
+                <b style="color:blue;">{{=row.votes}}</b> 
+            </td>
+            <td>
+                {{=A(row.title,_style="color:black;font-size:16px",_href=URL('view_post',args=row.id))}} 
+            </td>
+        </tr>
+         <tr>
+            <td>
+
+            </td>
+            <td>
+                {{=A('Answers',_href=URL('view_post',args=row.id))}} &nbsp Asked:    {{=prettydate(row.created_on)}}
+            </td>
+        </tr>
+    </table>
+</div>
+{{pass}}
+
+{{if page>0:}}
+<div style="background-color:#dddddd;width:5%;padding:4px;">
+    {{=A('Previous',_href=URL(args=(category.name,page-1)))}}
+</div>
+{{pass}}
+
+{{if len(rows)>=10:}}
+<div style="background-color:#dddddd;width:2.5%;padding:3px;float:right;margin-right:250px;margin-top:-10px">
+    {{=A('Next',_href=URL(args=(category.name,page+1)))}}
+</div>{{pass}}
